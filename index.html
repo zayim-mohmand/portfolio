@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - Zayim MOHMAND</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">Portfolio<span class="dot">.</span></div>
+            <ul class="nav-links">
+                <li><a href="#home" data-i18n="nav-home">Home</a></li>
+                <li><a href="#experiences" data-i18n="nav-exp">Experiences</a></li>
+                <li><a href="#education" data-i18n="nav-edu">Education</a></li>
+                <li><a href="#projects" data-i18n="nav-proj">Projects</a></li>
+                <li><a href="#skills" data-i18n="nav-skills">Skills</a></li>
+                <li><a href="#references" data-i18n="nav-ref">References</a></li> <li><a href="#contact" data-i18n="nav-contact">Contact</a></li>
+                <li><button id="lang-switch" class="lang-btn">FR</button></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <section id="home" class="hero-section">
+        <div class="container hero-content">
+            <div class="text-zone fade-in-up">
+                <h2 class="greeting" data-i18n="greeting">Hello, I am</h2>
+                <h1>Zayim MOHMAND</h1>
+                <h3 class="typing-effect" data-i18n="role">Computer Science Student</h3>
+                <p class="description" data-i18n="description">
+                    As a dedicated computer science student, I turn data, logic, and clean design into meaningful digital solutions. Driven by curiosity and precision, I build systems that connect ideas, streamline processes, and bring projects to life.
+                </p>
+                
+                <div class="buttons">
+                    <a href="ressources/CV_English_MOHMAND.pdf" class="btn btn-primary" target="_blank" data-i18n="download-cv">
+                        Download my CV
+                    </a>
+                </div>
+            </div>
+            
+            <div class="image-zone fade-in-up delay-200">
+                <div class="img-wrapper">
+                    <img src="ressources/image.png" alt="Zayim MOHMAND" class="profile-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="experiences" class="section">
+        <div class="container">
+            <h2 class="section-title" data-i18n="title-exp">Experiences</h2>
+            <div class="timeline">
+                
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content card-hover">
+                        <h3 data-i18n="exp1-title">Tutor helping with homework</h3>
+                        <span class="date" data-i18n="exp1-date">November 2025 - Ongoing</span>
+                        <h4>Gaillard Town Hall</h4>
+                        <p data-i18n="exp1-desc">Providing academic support to middle and high school students within the community. Helping them understand lessons, complete exercises, and strengthen core subjects.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content card-hover">
+                        <h3 data-i18n="exp2-title">Delivering meals to elderly residents</h3>
+                        <span class="date" data-i18n="exp2-date">June 2025 - August 2025</span>
+                        <h4>Gaillard Town Hall</h4>
+                        <p data-i18n="exp2-desc">Ensuring reliable, timely delivery while maintaining a respectful and supportive relationship with recipients. Providing a friendly presence.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content card-hover">
+                        <h3 data-i18n="exp3-title">Multi-purpose agent</h3>
+                        <span class="date" data-i18n="exp3-date">June 2024 - August 2024</span>
+                        <h4>Blanchisserie de la Jonction</h4>
+                        <p data-i18n="exp3-desc">Delivery of fabrics, laundry, and clothing to businesses. Cash handling and register management. Customer reception and assistance.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="education" class="section bg-alt">
+        <div class="container">
+            <h2 class="section-title" data-i18n="title-edu">Education</h2>
+            <div class="cards-grid">
+                <div class="card card-hover">
+                    <h3 data-i18n="edu1-title">BUT Informatique (Technical Bachelor’s Degree)</h3>
+                    <span class="highlight">Savoie Mont-Blanc University/IUT of Annecy</span>
+                    <span class="date" data-i18n="edu1-date">2024 - Ongoing</span>
+                    <p data-i18n="edu1-desc">Specializing in database administration, management, and operations.</p>
+                </div>
+                <div class="card card-hover">
+                    <h3 data-i18n="edu2-title">French Baccalaureate</h3>
+                    <span class="highlight">Glières High School</span>
+                    <span class="date">2021</span>
+                    <p data-i18n="edu2-desc">High School diploma specialized in Mathematic and Earth science</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="section">
+        <div class="container">
+            <h2 class="section-title" data-i18n="title-proj">Projects</h2>
+            <div class="projects-grid">
+                
+                <div class="project-card card-hover">
+                    <h3>SAE 1.01</h3>
+                    <p data-i18n="proj1-desc">A fast-paced 2D platformer where you must collect ingredients to face the final boss: a giant Raclette. AI-controlled enemies included.</p>
+                    <div class="tags">
+                        <span>C#</span><span>XAML</span><span>.NET</span>
+                    </div>
+                    <a href="https://github.com/fakkito/SAE-1.01_1.02" class="project-link" target="_blank" data-i18n="see-github">See on GitHub <i class="fa-brands fa-github"></i></a>
+                </div>
+
+                <div class="project-card card-hover">
+                    <h3>SAE 2.01 - Loxam</h3>
+                    <p data-i18n="proj2-desc">Construction Vehicle Rental System. Lightweight platform to manage BTP vehicle rentals: availability, scheduling, maintenance.</p>
+                    <div class="tags">
+                        <span>C#</span><span>XAML</span><span>.NET</span><span>PGSQL</span>
+                    </div>
+                    <a href="https://github.com/oussenan/Logiciel_Loxam" class="project-link" target="_blank" data-i18n="see-github">See on GitHub <i class="fa-brands fa-github"></i></a>
+                </div>
+
+                <div class="project-card card-hover">
+                    <h3>Phaser-Game</h3>
+                    <p data-i18n="proj3-desc">2D Platformer – Coin Dash. Collect 28 coins while dodging spikes and enemies to reach the end without getting hit.</p>
+                    <div class="tags">
+                        <span>HTML</span><span>CSS</span><span>JavaScript</span>
+                    </div>
+                    <a href="https://github.com/Zayim-moh/Phaser_Game" class="project-link" target="_blank" data-i18n="see-github">See on GitHub <i class="fa-brands fa-github"></i></a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="section bg-alt">
+        <div class="container">
+            <h2 class="section-title" data-i18n="title-skills">Skills</h2>
+            
+            <div class="skills-wrapper">
+                <div class="skills-column">
+                    <h3 class="column-title" data-i18n="skill-tech">Technical Skills</h3>
+                    <div class="skill-box">
+                        <div class="skill-info"><p>MySQL/PostGreSQL/Merise</p><p>90%</p></div>
+                        <div class="skill-bar"><span class="skill-per" per="90%"></span></div>
+                    </div>
+                    <div class="skill-box">
+                        <div class="skill-info"><p>UML/WordPress/PowerBI</p><p>85%</p></div>
+                        <div class="skill-bar"><span class="skill-per" per="85%"></span></div>
+                    </div>
+                    <div class="skill-box">
+                        <div class="skill-info"><p>C#/Python</p><p>80%</p></div>
+                        <div class="skill-bar"><span class="skill-per" per="80%"></span></div>
+                    </div>
+                    <div class="skill-box">
+                        <div class="skill-info"><p>HTML/CSS/JavaScript</p><p>75%</p></div>
+                        <div class="skill-bar"><span class="skill-per" per="75%"></span></div>
+                    </div>
+                </div>
+
+                <div class="skills-column">
+                    <h3 class="column-title" data-i18n="skill-soft">Soft Skills</h3>
+                    <div class="skill-box">
+                        <div class="skill-info"><p data-i18n="soft1">Responsibility/Teamwork</p><p>95%</p></div>
+                        <div class="skill-bar"><span class="skill-per" per="95%"></span></div>
+                    </div>
+                    <div class="skill-box">
+                        <div class="skill-info"><p data-i18n="soft2">Punctuality/Public-Speaking</p><p>90%</p></div>
+                        <div class="skill-bar"><span class="skill-per" per="90%"></span></div>
+                    </div>
+                    <div class="skill-box">
+                        <div class="skill-info"><p data-i18n="soft3">Reliability/Interpersonal</p><p>85%</p></div>
+                        <div class="skill-bar"><span class="skill-per" per="85%"></span></div>
+                    </div>
+                    <div class="skill-box">
+                        <div class="skill-info"><p data-i18n="soft4">Communication</p><p>75%</p></div>
+                        <div class="skill-bar"><span class="skill-per" per="75%"></span></div>
+                    </div>
+                </div>
+
+                <div class="skills-column">
+                    <h3 class="column-title" data-i18n="skill-lang">Languages</h3>
+                    <div class="skill-box">
+                        <div class="skill-info"><p data-i18n="lang-fr">French (native speaker)</p><p>100%</p></div>
+                        <div class="skill-bar"><span class="skill-per" per="100%"></span></div>
+                    </div>
+                    <div class="skill-box">
+                        <div class="skill-info"><p data-i18n="lang-af">Afghan Persian (native speaker)</p><p>100%</p></div>
+                        <div class="skill-bar"><span class="skill-per" per="100%"></span></div>
+                    </div>
+                    <div class="skill-box">
+                        <div class="skill-info"><p data-i18n="lang-en">English (Intermediate speaker)</p><p>65%</p></div>
+                        <div class="skill-bar"><span class="skill-per" per="65%"></span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="references" class="section">
+        <div class="container">
+            <h2 class="section-title" data-i18n="title-ref">References</h2>
+            <div class="cards-grid">
+                
+                <div class="card ref-card card-hover">
+                    <div class="ref-icon"><i class="fa-solid fa-user-tie"></i></div>
+                    <h3>Luc DAMAS</h3>
+                    <span class="highlight" data-i18n="ref1-role">Programming professor</span>
+                    <p class="ref-email"><i class="fa-solid fa-envelope"></i>luc.damas@etu.univ-smb.fr</p>
+                </div>
+
+                <div class="card ref-card card-hover">
+                    <div class="ref-icon"><i class="fa-solid fa-user-tie"></i></div>
+                    <h3>Pascal COLIN</h3>
+                    <span class="highlight" data-i18n="ref2-role">DataBase professor</span>
+                    <p class="ref-email"><i class="fa-solid fa-envelope"></i> pascal.colin@etu.univ-smb.fr</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section bg-alt">
+        <div class="container contact-wrapper">
+            <h2 class="section-title" data-i18n="title-contact">Contact</h2>
+            <p data-i18n="contact-desc">An idea? A project? Let's discuss.</p>
+            
+            <form id="contact-form" action="https://formspree.io/f/mdkvggro" method="POST">
+                <div class="form-group">
+                    <label for="name" data-i18n="lbl-name">Name</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email" data-i18n="lbl-email">Email</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message" data-i18n="lbl-message">Message</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary" data-i18n="btn-send">Send Message</button>
+                <p id="my-form-status"></p>
+            </form>
+
+            <div class="social-buttons">
+                <a href="mailto:zayim.mohmand@etu.univ-smb.fr" class="social-btn email">
+                    <i class="fa-solid fa-envelope"></i> <span>Email</span>
+                </a>
+                <a href="https://www.linkedin.com/in/zayim-mohmand-74100abc/" target="_blank" class="social-btn linkedin">
+                    <i class="fa-brands fa-linkedin-in"></i> <span>LinkedIn</span>
+                </a>
+                <a href="https://github.com/Zayim-moh" target="_blank" class="social-btn github">
+                    <i class="fa-brands fa-github"></i> <span>GitHub</span>
+                </a>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Zayim MOHMAND. <span data-i18n="footer">All rights reserved</span></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
